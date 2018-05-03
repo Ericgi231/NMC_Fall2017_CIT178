@@ -1,0 +1,30 @@
+The key, the whole key, and nothing but the key.
+
+the key - 1nf:
+primary unique
+atomic
+no repeat col
+
+3 total
+
+the whole key - 2nf:
+starts with 1nf
+no partial dependencies on composite keys
+
+3 + 1 total
+
+nothing but - 3nf:
+starts with 1nf and 2nf
+no transitive dependencies
+
+3 + 1 + 1 total
+
+---------------------
+
+dependancy:
+non key col is depend on canidate key
+
+canidate is temp primary key during normilization
+
+
+

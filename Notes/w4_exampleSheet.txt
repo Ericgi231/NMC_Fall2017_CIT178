@@ -1,0 +1,58 @@
+--count and sum
+--SELECT
+--	COUNT(*) AS NumberOfInvoices,
+--	SUM(InvoiceTotal - PaymentTotal - CreditTotal) AS TotalDue
+--	FROM Invoices
+--	WHERE InvoiceTotal - PaymentTotal - CreditTotal > 0;
+
+--avg and sum
+--SELECT
+--	'After 9/1/2015' AS SelectionDate
+--	,Count(*) AS NumberOfInvoices
+--	,AVG(InvoiceTotal) AS AverageInvoiceAmount
+--	,SUM(InvoiceTotal) AS TotalInvoiceAmount
+--	FROM Invoices
+--	WHERE InvoiceDate > '2015-09-11'
+
+--avg and sum
+--SELECT
+--	'After 9/1/2015' AS SelectionDate
+--	,Count(*) AS NumberOfInvoices
+--	,MAX(InvoiceTotal) AS HighestInvoiceAmount
+--	,MIN(InvoiceTotal) AS LowestInvoiceAmount
+--	FROM Invoices
+--	WHERE InvoiceDate > '2015-09-11'
+
+--count avg sum distinct
+--SELECT
+--	COUNT(DISTINCT VendorID) AS NumbrOfVendors
+--	,COUNT(VendorID) AS NumberOfInvoices
+--	,AVG(InvoiceTotal) AS AverageInvoiceTotal
+--	,SUM(InvoiceTotal) AS TotalInvoiceAmount
+--	FROM Invoices
+--	WHERE InvoiceDate > '2015-09-01'
+
+--avg invoice amount by vendor
+--SELECT
+--	VendorID
+--	,AVG(InvoiceTotal) AS AverageInvoiceAmount
+--	FROM Invoices
+--	GROUP BY VendorID
+--	HAVING AVG(InvoiceTotal) > 2000
+--	ORDER BY AverageInvoiceAmount DESC;
+
+--number of invoices by vendor
+--SELECT
+--	VendorID
+--	,COUNT(*) AS InvoiceQty
+--	FROM Invoices
+--	GROUP BY VendorID
+
+--me and the boys ROLLUP
+--SELECT
+--	VendorID
+--	,COUNT(*) AS InvoiceCount
+--	,SUM(InvoiceTotal) AS InvoiceTotal
+--	FROM Invoices
+--	GROUP BY VendorID WITH ROLLUP;
+

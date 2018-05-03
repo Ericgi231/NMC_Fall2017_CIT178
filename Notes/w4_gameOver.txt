@@ -1,0 +1,7 @@
+OVER
+perform an aggricate function of data on a partition or order
+
+PARTITION
+groups data by a single element, does not show on front end
+a temp group
+

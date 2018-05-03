@@ -1,0 +1,13 @@
+can contain subQuery
+SELECT cols
+FROM sources
+WHERE expresion
+HAVING expresion
+
+
+put () around a query to sub it
+
+subQuery can return
+,single value - one box
+,result set with one column
+,result set with multiple columns

@@ -1,0 +1,46 @@
+AVG
+gets average of all rows, skips null
+
+SUM
+gets sum of all rows, skips null
+
+MIN
+get number from all rows, dispays lowest
+
+MAX
+get number from all rows, dispays highest
+
+COUNT
+count the total rows and output as an int
+
+//
+
+alliaces finalize on ORDER BY
+
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING
+ORDER BY
+
+IS NULL(field,value) AS
+
+ROLLUP
+total of all the things at the end of the table
+
+CUBE
+3D rollup, gives total for each columb
+
+WHERE checks before grouping
+filters records
+
+HAVING checks after grouping
+filters groups
+
+When you group rows by one elemnt, other unique elements are lost.
+
+In SELECT you can select aggregatte functions, columns used for grouping, constant values.
+This is when GROUP is used
+
+aggregate functions group the values of rows into a single row

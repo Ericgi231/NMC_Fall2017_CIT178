@@ -1,0 +1,38 @@
+sequal = Structured Query Language
+Declarative language = tell it what you want
+
+c#, java, ect
+imperative = tell it what to do
+
+relational database = tables of data
+document database = store in exact documents
+
+primary key identifies one record
+foreign key relates to another records primary key
+
+DDL is Data Definition Language : it is used to define data structures.
+For example, with SQL, it would be instructions such as create table, alter table, ...
+
+DML is Data Manipulation Language : it is used to manipulate data itself.
+For example, with SQL, it would be instructions such as insert, update, delete, ...
+
+detach removes a table from the data base
+attach adds tables to the data base
+
+backup compresses, while detach removes in normal format.
+
+you can select: wildcard, col list, aggragite function, expresion, calculations, concatinations, literals, subquery.
+
+expression returns a single value
+
+operators perform operations, + - / * > <
+
+function takes in data and outputs a value
+
+statemnt is entire action, clause is single parts.
+SELECT starts a new statement.
+
+parsing is pulling data apart and passing over it to make sure it is the desired type
+
+distinct applies to entire row
+

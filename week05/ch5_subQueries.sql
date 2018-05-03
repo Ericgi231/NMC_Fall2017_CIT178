@@ -1,0 +1,52 @@
+--USE AP;
+--GO
+
+--SELECT 
+--	i.InvoiceTotal
+--	, *
+--	FROM Invoices AS i
+--	WHERE InvoiceTotal >
+--		(SELECT
+--			AVG(InvoiceTotal)
+--			FROM Invoices)
+--	ORDER BY i.InvoiceTotal
+
+----page 187
+----join
+--SELECT
+--	VendorState
+--	,*
+--	FROM Invoices
+--	LEFT JOIN Vendors
+--		ON invoices.VendorID = Vendors.VendorID
+--	WHERE VendorState = 'CA'
+--	ORDER BY InvoiceDate
+
+----sub
+--SELECT
+--	*
+--	FROM Invoices
+--	WHERE VendorID IN
+--		(SELECT
+--			VendorID
+--			FROM Vendors
+--			WHERE VendorState = 'CA')
+--	Order BY InvoiceDate
+
+----page 189
+----left join
+--SELECT
+--	*
+--	FROM Vendors AS v
+--	LEFT JOIN Invoices AS i
+--		ON v.VendorID = i.VendorID
+--	WHERE i.VendorID IS NULL
+
+----sub
+--SELECT
+--	*
+--	FROM Vendors
+--	WHERE VendorID NOT IN
+--		(SELECT 
+--			DISTINCT VendorID
+--			FROM Invoices)

@@ -1,0 +1,138 @@
+--SELECT *
+--	FROM Invoices;
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceDate
+--	,InvoiceTotal
+--	FROM Invoices
+--	ORDER BY InvoiceTotal
+
+--SELECT
+--	InvoiceID
+--	,InvoiceTotal
+--	,CreditTotal + PaymentTotal AS CreditTotal
+--	FROM Invoices
+--	WHERE InvoiceID = 17
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceDate
+--	,InvoiceTotal
+--	FROM Invoices
+--	WHERE InvoiceDate BETWEEN '2016-01-01' AND '2016-05-31' 
+--	ORDER BY InvoiceDate
+
+--select *
+--	FROM Invoices
+--	WHERE InvoiceTotal > 5000
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceTotal - PaymentTotal - CreditTotal AS BalanceDue
+--	FROM Invoices
+
+--SELECT
+--	VendorContactFName
+--	,VendorContactLName
+--	,VendorContactFName + ' ' + VendorContactLName AS VendorFullName
+--	FROM Vendors
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceDate
+--	,GETDATE() AS CurrentDate
+--	FROM Invoices
+
+--SELECT
+--	InvoiceNumber AS 'Invoice Number'
+--	,InvoiceDate AS 'Date'
+--	,InvoiceTotal AS 'Total'
+--	FROM Invoices
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceDate
+--	,InvoiceTotal
+--	,InvoiceTotal - PaymentTotal - CreditTotal
+--	FROM Invoices
+
+--SELECT
+--	VendorName
+--	,VendorCity + ', ' + VendorState + ' ' + VendorZipCode AS Address
+--	FROM Vendors
+
+--SELECT
+--	VendorContactFName
+--	,VendorContactLName
+--	,LEFT(VendorContactFName, 1) + LEFT(VendorContactLName, 1) AS VendorContactInitials
+--	FROM Vendors
+
+--SELECT
+--	DISTINCT VendorCity
+--	,VendorState
+--	FROM Vendors
+--	ORDER BY VendorCity
+
+--SELECT TOP 5
+--	VendorID
+--	,InvoiceTotal
+--	FROM Invoices
+--	ORDER BY InvoiceTotal DESC
+
+--SELECT TOP 5 PERCENT
+--	VendorID
+--	,InvoiceTotal
+--	FROM Invoices
+--	ORDER BY InvoiceTotal DESC
+
+--SELECT TOP 5 WITH TIES
+--	VendorID
+--	,InvoiceDate
+--	FROM Invoices
+--	ORDER BY InvoiceDate
+
+--SELECT
+--	InvoiceNumber
+--	,InvoiceDate
+--	,InvoiceTotal
+--	,InvoiceTotal - PaymentTotal - CreditTotal AS BalanceDue
+--	FROM Invoices
+--	WHERE (
+--	InvoiceDate > '2016-01-01'
+--	OR InvoiceTotal > 500
+--	) 
+--	AND InvoiceTotal - PaymentTotal - CreditTotal > 0
+
+--SELECT
+--	VendorCity
+--	FROM Vendors
+--	WHERE VendorCity LIKE 'san%'
+
+--SELECT
+--	VendorName
+--	FROM Vendors
+--	WHERE VendorName LIKE 'compu_er%'
+
+--SELECT
+--	VendorContactLName
+--	FROM Vendors
+--	WHERE VendorContactLName LIKE 'dami[eo]n'
+
+-- between letters
+-- 'big b[a-o]y'
+
+--SELECT *
+--	FROM NullSample
+--	WHERE InvoiceTotal IS NULL
+
+--SELECT *
+--	FROM NullSample
+--	WHERE InvoiceTotal IS NOT NULL
+
+-- Use , to seperate order by, works left to right.
+-- ORDER BY Var1, Var2, Var3
+
+-- Start at first row and take 5
+-- OFFSET 0 ROWS
+-- FETCH FIRST % ROWS ONLY

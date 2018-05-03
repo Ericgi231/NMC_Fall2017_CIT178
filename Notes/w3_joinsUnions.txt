@@ -1,0 +1,13 @@
+Joins combine colombs.
+Unions combine rows.
+
+left makes left table pull.
+right makes right table pull.
+
+full makes left pull then right.
+
+Inner, only matches
+Outer, include all
+
+except cuts out ones that match
+intersect only show ones that match

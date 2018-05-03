@@ -1,0 +1,8 @@
+Common Table Expressions
+Keyword = WITH
+
+CTE are methods/views
+
+dbo = data base owner
+schema
+

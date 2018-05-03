@@ -1,0 +1,23 @@
+vocab {
+SQL = Structured Query Language
+API = Aplication Programming Interface
+DBMS = Data Base Managment System
+SSMS = SQL Server Management Studio
+}
+
+basic info {
+1.non case sensitive
+2.single quotes
+3.no ;
+4.you are not telling the computer what to do,
+you are giving it instructions and it attempts to follow them.
+5.data types work like python and js.
+
+declarative - you suggest what it should do
+imperative - you tell it exactly what to do
+}
+
+example {
+where VendorID = ''
+and year(InvoiceDate) = ''
+}

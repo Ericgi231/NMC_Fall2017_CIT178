@@ -1,0 +1,57 @@
+TC New Tech
+Microsoft SQL Server Managment Studio
+
+deprecated = not in use but kept for backward compatability.
+
+columb allies - the name on top of a columb
+
+AP - dataBase
+dbo - schema
+invoice - table
+
+default schema = dbo
+dbo = dataBaseOwner
+
+database types:
+relational - seperated into chunks
+document
+graphical
+
+database access:
+noSQL
+SQL
+
+SQL competators:
+oracle
+mySQL
+postgressSQL
+
+############################
+select: <cols>
+from <table list>
+where <expression> // True or False
+order by <cols>
+############################
+
+>result set
+>>rows
+
+SQL language:
+statements
+>clauses
+>expressions
+
+GO is not part of SQL
+GO tells SMSS to hold up
+
+example{
+SELECT 
+	VendorID
+	,InvoiceNumber
+	,InvoiceDate
+	,InvoiceTotal
+	FROM AP.dbo.Invoices
+	WHERE InvoiceDate > '2016-01-01'
+	ORDER BY VendorID 
+}
+

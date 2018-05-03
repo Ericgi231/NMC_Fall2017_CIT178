@@ -1,0 +1,2 @@
+Atomicity - take aprt into singular aspects.
+delimiter - character that determines the boundries.
